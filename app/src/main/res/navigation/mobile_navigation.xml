@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_main_admin">
+
+    <fragment
+        android:id="@+id/navigation_main_admin"
+        android:name="com.example.myppaplication.fragments.MainAdminFragment"
+        android:label=""
+        tools:layout="@layout/fragment_main_admin" />
+
+    <fragment
+        android:id="@+id/navigation_clients"
+        android:name="com.example.myppaplication.fragments.ShowClientsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_add_client" />
+
+    <fragment
+        android:id="@+id/navigation_add_client"
+        android:name="com.example.myppaplication.fragments.AddClientFragment"
+        android:label=""
+        tools:layout="@layout/fragment_show_clients" />
+
+</navigation>

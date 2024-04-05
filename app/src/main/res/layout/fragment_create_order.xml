@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CreateOrderFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="10dp"
+        android:text="Создание заявки"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Введите данные для создания заявки\nпо созданию металлоконструкции"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editNewNameOrder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:hint="Введите название"
+        style="@style/RoundedEditText"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editNewSizeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:hint="Введите размеры"
+        style="@style/RoundedEditText"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewNameOrder" />
+
+    <EditText
+        android:id="@+id/editNewMetalOrder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:hint="Введите используемый металл"
+        style="@style/RoundedEditText"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewSizeOrder" />
+
+    <EditText
+        android:id="@+id/editNewColorOrder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:hint="Введите цвет покраски"
+        style="@style/RoundedEditText"
+        android:inputType="text"
+        android:paddingStart="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewMetalOrder" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="33dp"
+        android:text="Добавить чертеж"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editNewColorOrder"
+        app:layout_constraintTop_toBottomOf="@+id/editNewColorOrder" />
+
+    <ImageButton
+        android:id="@+id/addPlanNewOrder"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/editNewColorOrder"
+        app:srcCompat="@drawable/addplan"/>
+
+    <Button
+        android:id="@+id/addNewOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="35dp"
+        android:text="Сохранить"
+        android:backgroundTint="#1A6FEE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPlanNewOrder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_main_admin"
+        android:icon="@drawable/list_order"
+        android:title="Заявки" />
+
+    <item
+        android:id="@+id/navigation_clients"
+        android:icon="@drawable/all_users"
+        android:title="Клиенты" />
+
+    <item
+        android:id="@+id/navigation_add_client"
+        android:icon="@drawable/add_user"
+        android:title="Добавить клиента" />
+
+</menu>

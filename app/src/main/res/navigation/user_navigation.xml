@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_navigation"
+    app:startDestination="@+id/navigation_user_orders">
+
+    <fragment
+        android:id="@+id/navigation_user_orders"
+        android:name="com.example.myppaplication.fragments.UserOrdersFragment"
+        android:label=""
+        tools:layout="@layout/fragment_user_orders" />
+
+    <fragment
+        android:id="@+id/navigation_create_order"
+        android:name="com.example.myppaplication.fragments.CreateOrderFragment"
+        android:label=""
+        tools:layout="@layout/fragment_create_order" />
+</navigation>
